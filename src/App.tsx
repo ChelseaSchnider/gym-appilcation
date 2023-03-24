@@ -1,4 +1,5 @@
 import { Navbar } from "./components/Navbar"
+import { Benefits } from "./components/Benefits"
 import { SelectedPage } from "@/shared/types";
 import { useEffect, useState } from "react";
 import { Hero } from "./components/HeroSection";
@@ -31,6 +32,7 @@ export const HomePage = () => {
         setSelectedPage={setSelectedPage}
       />
       <Hero setSelectedPage={setSelectedPage}/>
+      <Benefits setSelectedPage={setSelectedPage}/>
     </div>
   )
 }

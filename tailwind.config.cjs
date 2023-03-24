@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -34,5 +36,16 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addComponents, theme }) {
+      addComponents({
+        '.gym-section': {
+          marginBottom: '104px',
+          '@media (min-width: theme("screens.lg"))': {
+            marginBottom: '144px',
+          },
+        },
+      });
+    }),
+  ],
 }

@@ -53,8 +53,7 @@ export const Navbar = ({isTopOfPage, selectedPage, setSelectedPage }: ComponentP
                       setSelectedPage={setSelectedPage}
                     />
                   </div>
-                  <div className={`${flexBetween} gap-8`}>
-                    <p>Sign In</p>
+                  <div>
                     <ActionButton setSelectedPage={setSelectedPage}>
                       Become a Member
                     </ActionButton>

@@ -1,5 +1,6 @@
-import { Navbar } from "./components/Navbar"
-import { Benefits } from "./components/Benefits"
+import { Navbar } from "./components/Navbar";
+import { Benefits } from "./components/Benefits";
+import { OurClasses } from "./components/OurClasses";
 import { SelectedPage } from "@/shared/types";
 import { useEffect, useState } from "react";
 import { Hero } from "./components/HeroSection";
@@ -33,6 +34,7 @@ export const HomePage = () => {
       />
       <Hero setSelectedPage={setSelectedPage}/>
       <Benefits setSelectedPage={setSelectedPage}/>
+      <OurClasses setSelectedPage={setSelectedPage} />
     </div>
   )
 }

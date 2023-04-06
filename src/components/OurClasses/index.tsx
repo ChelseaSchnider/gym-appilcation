@@ -80,7 +80,8 @@ export const OurClasses = ({ setSelectedPage }: Props) => {
             </p>
           </div>
         </motion.div>
-        <div className="flex justify-center mt-10 h-[353px]">
+        <div className="grid md:grid-rows-2 md:grid-flow-col gap-4 items-center justify-center mt-10">
+
             {classes1.map((item: ClassType, index) => (
               <Class
                 key={`${item.name}-${index}`}
@@ -89,8 +90,7 @@ export const OurClasses = ({ setSelectedPage }: Props) => {
                 image={item.image}
               />
             ))}
-        </div>
-        <div className="flex justify-center mt-10 h-[353px]">
+
             {classes2.map((item: ClassType, index) => (
               <Class
                 key={`${item.name}-${index}`}

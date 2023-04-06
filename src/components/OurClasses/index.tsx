@@ -49,13 +49,6 @@ const classes2: Array<ClassType> = [
   },
 ];
 
-const container = {
-    hidden: {},
-    visible: {
-      transition: { staggerChildren: 0.2 },
-    },
-  };
-
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
@@ -88,6 +81,7 @@ export const OurClasses = ({ setSelectedPage }: Props) => {
           </div>
         </motion.div>
         <div className="grid md:grid-rows-2 md:grid-flow-col gap-4 items-center justify-center mt-10">
+
             {classes1.map((item: ClassType, index) => (
               <Class
                 key={`${item.name}-${index}`}
@@ -96,6 +90,7 @@ export const OurClasses = ({ setSelectedPage }: Props) => {
                 image={item.image}
               />
             ))}
+
             {classes2.map((item: ClassType, index) => (
               <Class
                 key={`${item.name}-${index}`}
@@ -104,7 +99,6 @@ export const OurClasses = ({ setSelectedPage }: Props) => {
                 image={item.image}
               />
             ))}
-            
         </div>
       </motion.div>
     </section>

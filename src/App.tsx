@@ -4,6 +4,7 @@ import { OurClasses } from "./components/OurClasses";
 import { SelectedPage } from "@/shared/types";
 import { useEffect, useState } from "react";
 import { Hero } from "./components/HeroSection";
+import { ContactUs } from "./components/ContactUs";
 
 
 
@@ -35,6 +36,7 @@ export const HomePage = () => {
       <Hero setSelectedPage={setSelectedPage}/>
       <Benefits setSelectedPage={setSelectedPage}/>
       <OurClasses setSelectedPage={setSelectedPage} />
+      <ContactUs setSelectedPage={setSelectedPage} />
     </div>
   )
 }

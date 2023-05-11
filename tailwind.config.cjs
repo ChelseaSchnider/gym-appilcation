@@ -45,6 +45,21 @@ module.exports = {
             marginBottom: '144px',
           },
         },
+        '.gym-container': {
+          width: '100%',
+          maxWidth: '1920px',
+          margin: '0 auto',
+          padding: '0 32px',
+          '@media (min-width: theme("screens.lg"))': {
+            padding: '0 48px',
+          },
+          '@media (min-width: theme("screens.xl"))': {
+            padding: '0 128px',
+          },
+          '@media (min-width: theme("screens.2xl"))': {
+            padding: '0 140px',
+          },
+        },
       });
     }),
   ],
